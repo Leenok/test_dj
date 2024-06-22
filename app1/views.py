@@ -26,3 +26,6 @@ def index(request):
         return render(request, 'index.html')
     else:
         return HttpResponse(f"Неправильный пароль")
+
+
+# s
