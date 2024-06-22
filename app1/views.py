@@ -1,3 +1,20 @@
 from django.shortcuts import render
+from django.contrib.auth import logout
+from django.shortcuts import redirect
 
-# Create your views here.
+
+
+def index_logout (request) :
+    if request.method == "POST" :
+        logout(request)
+        return redirect(auth)
+    else:
+        return render(request,"TimurIndex.html")    
+
+
+
+
+            
+        
+
+
